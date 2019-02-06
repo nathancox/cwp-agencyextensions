@@ -36,7 +36,7 @@ class CarouselItem extends DataObject
     ];
 
     private static $has_one = [
-        'Parent' => 'HomePage',
+        'Parent' => SiteTree::class,
         'Image' => Image::class,
         'PrimaryCallToAction' => SiteTree::class,
         'SecondaryCallToAction' => SiteTree::class
